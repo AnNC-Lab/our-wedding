@@ -211,7 +211,58 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
             <path fill="currentColor" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg>
-
+        <div class="bg-black pb-2 text-center">
+            <div style="width: 100%; display: flex; justify-content: center; margin-top: 25px;">
+                <div class="styleChoose" style="border-radius: 10px 0 0 10px !important;" onclick="js_ChooseNhaTrai()" id="btnNhaTrai" >Nhà trai</div>
+                <div class="styleNone" style="border-radius: 0 10px 10px 0 !important;" onclick="js_ChooseNhaGai()" id="btnNhaGai">Nhà gái</div>
+            </div>
+            <div class="outer" style="padding: 10px;">
+                <div id="thiepNhaTrai" class="carContainer">
+                    <p style="text-align: center;">
+                        <span style="font-size: 120%; color: #282828;">
+                            <strong>TRÂN TRỌNG KÍNH MỜI</strong>
+                        </span>
+                        <span style="color: #696d52;"><br></span>
+                        <em><span style="color: #d83131;"><strong>Quý khách</strong></span></em>
+                        <br><span style="font-size: 90%;">
+                        <strong>
+                            <em>TỚI THAM DỰ BỮA TIỆC MỪNG CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI</em>
+                        </strong></span></p>
+                        <h2 class="font-esthetic my-4" style="font-size: 2rem;">Nguyễn An &amp; Ngọc Linh</h2>
+                        <p style="text-align: center;"><strong><span style="font-size: 110%;">Tổ chức vào lúc 11 giờ 00 phút</span></strong></p>
+                        <h3 style="text-align: center;"><span style="color: #d83131;">Chủ nhật, Ngày 23 tháng 02 năm 2025</span></h3>
+                        <p style="text-align: center;"><span style="font-size: 90%;"><em>(Tức ngày 26 tháng 01 năm Ất Tỵ)</em></span></p>
+                        <h5 style="text-align: center;"><span style="font-size: 120%; color: #d83131;"><strong>TẠI TƯ GIA NHÀ TRAI</strong></span></h5>
+                        <h5 style="text-align: center;">Minh Hòa 2 – Minh Khai – Hoài Đức – Hà Nội</h5>
+                        <p class="alt-font" style="text-align: center;"><span style="font-size: 120%;">Sự hiện diện của Quý khách là niềm vinh hạnh của gia đình chúng tôi!</span></p>                        
+                        <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.175834002124!2d105.67347097597035!3d21.065638286509568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313457d600061895%3A0x642b9484dcea401d!2zVHLGsOG7nW5nIG3huqdtIG5vbiBNaW5oIEtoYWk!5e0!3m2!1svi!2sus!4v1736525632199!5m2!1svi!2sus" width="600" height="180"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                        </div>
+                </div>
+                <div id="thiepNhaGai" class="carContainer" style="display: none;">
+                    <p style="text-align: center;">
+                        <span style="font-size: 120%; color: #282828;">
+                            <strong>TRÂN TRỌNG KÍNH MỜI</strong>
+                        </span>
+                        <span style="color: #696d52;"><br></span>
+                        <em><span style="color: #d83131;"><strong>Quý khách</strong></span></em>
+                        <br><span style="font-size: 90%;">
+                        <strong>
+                            <em>TỚI THAM DỰ BỮA TIỆC MỪNG CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI</em>
+                        </strong></span></p>
+                        <h2 class="font-esthetic my-4" style="font-size: 2rem;">Nguyễn An &amp; Ngọc Linh</h2>
+                        <p style="text-align: center;"><strong><span style="font-size: 110%;">Tổ chức vào lúc 11 giờ 00 phút</span></strong></p>
+                        <h3 style="text-align: center;"><span style="color: #d83131;">Chủ nhật, Ngày 23 tháng 02 năm 2025</span></h3>
+                        <p style="text-align: center;"><span style="font-size: 90%;"><em>(Tức ngày 26 tháng 01 năm Ất Tỵ)</em></span></p>
+                        <h5 style="text-align: center;"><span style="font-size: 120%; color: #d83131;"><strong>TẠI TƯ GIA NHÀ GÁI</strong></span></h5>
+                        <h5 style="text-align: center;">HOÀNG XÁ – VÂN ĐÌNH – ỨNG HÒA – Hà Nội</h5>
+                        <p class="alt-font" style="text-align: center;"><span style="font-size: 120%;">Sự hiện diện của Quý khách là niềm vinh hạnh của gia đình chúng tôi!</span></p>                        
+                        <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3801683264005!2d105.77191409999999!3d20.7353798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31343557935b4b45%3A0x97f4e0e1b102977!2zVUJORCBodXnhu4duIOG7qG5nIEjDsmE!5e0!3m2!1svi!2s!4v1736528157868!5m2!1svi!2s" width="600" height="180"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
             <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
@@ -574,6 +625,22 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js" integrity="sha256-mvTaORw+RTgKnX6ZHT4P5Sc9DNP2TBpSGII7F3sT8iE=" crossorigin="anonymous"></script>
     <script src="./js/app.js" type="module"></script>
+    <script>
+        function js_ChooseNhaTrai(){
+            document.getElementById('btnNhaTrai').className="styleChoose";
+            document.getElementById('btnNhaGai').className="styleNone";
+
+            document.getElementById('thiepNhaTrai').style.display="block";
+            document.getElementById('thiepNhaGai').style.display="none";
+        }
+        function js_ChooseNhaGai(){
+            document.getElementById('btnNhaTrai').className="styleNone";
+            document.getElementById('btnNhaGai').className="styleChoose";
+
+            document.getElementById('thiepNhaTrai').style.display="none";
+            document.getElementById('thiepNhaGai').style.display="block";
+        }
+    </script>
 </body>
 
 </html>

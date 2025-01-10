@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.undangan = guest.init();
     window.comment = comment;
 });
+
