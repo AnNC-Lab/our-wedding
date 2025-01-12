@@ -5,7 +5,6 @@ import { theme } from '../common/theme.js';
 import { storage } from '../common/storage.js';
 import { session } from '../common/session.js';
 import { offline } from '../common/offline.js';
-import { comment } from '../comment/comment.js';
 import { bootstrap } from '../libs/bootstrap.js';
 import { confetti, openAnimation } from '../libs/confetti.js';
 
@@ -44,19 +43,34 @@ export const guest = (() => {
      */
     const opacity = (id, speed = 0.01) => {
         const el = document.getElementById(id);
-        let op = parseFloat(el.style.opacity);
+        let op = 1.0;
+        try{
+            op = parseFloat(el.style.opacity)
+        }
+        catch{
+            op = 1.0;
+        }
 
         let clear = null;
         const callback = () => {
             if (op > 0) {
-                el.style.opacity = op.toFixed(3);
+                try{
+                    el.style.opacity = op.toFixed(3);
+                }catch{
+                    null;
+                }
                 op -= speed;
                 return;
             }
 
             clearInterval(clear);
             clear = null;
-            el.remove();
+            try{
+                el.remove();
+            }
+            catch{
+                null;
+            }
         };
 
         clear = setInterval(callback, 10);
@@ -127,7 +141,12 @@ export const guest = (() => {
      * @returns {void}
      */
     const modal = (img) => {
-        document.getElementById('show-modal-image').src = img.src;
+        if(typeof(img) === 'object'){
+            document.getElementById('show-modal-image').src = img.src;
+        }
+        else{
+            document.getElementById('show-modal-image').src = img;
+        }
         bootstrap.Modal.getOrCreateInstance('#modal-image').show();
     };
 
@@ -167,14 +186,14 @@ export const guest = (() => {
         information = storage('information');
         document.addEventListener('progressDone', showGuestName);
 
-        if (session.isAdmin()) {
-            storage('user').clear();
-            storage('owns').clear();
-            storage('likes').clear();
-            storage('session').clear();
-            storage('comment').clear();
-            storage('tracker').clear();
-        }
+        // if (session.isAdmin()) {
+        //     storage('user').clear();
+        //     storage('owns').clear();
+        //     storage('likes').clear();
+        //     storage('session').clear();
+        //     storage('comment').clear();
+        //     storage('tracker').clear();
+        // }
 
         if (information.has('presence')) {
             document.getElementById('form-presence').value = information.get('presence') ? '1' : '2';
@@ -188,8 +207,8 @@ export const guest = (() => {
         const token = document.body.getAttribute('data-key');
         if (!token || token.length === 0) {
             progress.init();
-            document.getElementById('comment')?.remove();
-            document.querySelector('a.nav-link[href="#comment"]')?.closest('li.nav-item')?.remove();
+            // document.getElementById('comment')?.remove();
+            // document.querySelector('a.nav-link[href="#comment"]')?.closest('li.nav-item')?.remove();
         }
 
         if (token.length > 0) {
@@ -199,19 +218,16 @@ export const guest = (() => {
             progress.init();
 
             session.setToken(token);
-            session.guest().then((res) => {
-                if (res.code !== 200) {
-                    progress.invalid('config');
-                    return;
-                }
-
-                progress.complete('config');
-
-                comment.init();
-                comment.comment()
-                    .then(() => progress.complete('comment'))
-                    .catch(() => progress.invalid('comment'));
-            }).catch(() => progress.invalid('config'));
+            let res = session.guest();
+            if(res.code !== 200){
+                progress.invalid('config');
+                return;
+            }
+            progress.complete('config');
+            // comment.init();
+            //     comment.comment()
+            //         .then(() => progress.complete('comment'))
+            //         .catch(() => progress.invalid('comment'));
         }
 
         return {

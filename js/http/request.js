@@ -31,6 +31,7 @@ export const request = (method, path) => {
             return fetch(url + path, req)
                 .then((res) => {
                     return res.json().then((json) => {
+                        console.log(res);
                         if (res.status >= 500 && (json.message ?? json[0])) {
                             throw new Error(json.message ?? json[0]);
                         }

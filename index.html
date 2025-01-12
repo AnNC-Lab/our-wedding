@@ -70,10 +70,7 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
-<!-- If not using comments, you can remove the data-key and data-url attributes -->
-<!-- Data theme ['auto', 'dark', 'light'] -->
-
-<body data-key="bfb9cfea33ab7ae21a315fbd6f065a815d3e20ff2f007aa2ca" data-url="https://api.ulems.my.id/" data-theme="auto">
+<body data-key="123456" data-url="https://annc-lab.github.io/our-wedding/" data-theme="auto">
 
     <!-- Navbar Bottom -->
     <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 border-top p-0" id="navbar-menu">
@@ -102,12 +99,6 @@
                     <span class="d-block" style="font-size: 0.7rem;">Ảnh cưới</span>
                 </a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#comment">
-                    <i class="fa-solid fa-comments"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">An Nguyễn</span>
-                </a>
-            </li> -->
         </ul>
     </nav>
 
@@ -302,12 +293,6 @@
                         </svg>
                     </div>
                 </div>
-<!-- 
-                <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
-                    <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Batik</h2>
-                    <p style="font-size: 0.95rem;">Dominasi berwarna hitam</p>
-                </div> -->
-
                 <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
                     <a href="https://www.google.com/maps/place/th%C3%B4n+Minh+H%C3%B2a+2,+Minh+Khai,+Ho%C3%A0i+%C4%90%E1%BB%A9c,+H%C3%A0+N%E1%BB%99i/@21.0635961,105.6758983,17z/data=!3m1!4b1!4m6!3m5!1s0x3134568f5ba804d9:0x75a2a4534dad9925!8m2!3d21.063574!4d105.6759513!16s%2Fg%2F1q5gr673g?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>Địa chỉ Google Maps</a>
                     <small class="d-block my-1">Thôn Minh Hòa 2 - Minh Khai - Hoài Đức - Hà Nội.</small>
@@ -318,44 +303,24 @@
         <!-- Gallery -->
         <section class="bg-black pb-5 pt-4" id="gallery">
             <div class="container">
-                <div class="border rounded-5 shadow p-3">
-
-                    <h2 class="font-esthetic text-center py-2 m-0" style="font-size: 2.5rem;">Ảnh cưới</h2>
-
-                    <div id="carousel-image-one" data-aos="fade-up" data-aos-duration="1500" class="carousel slide mt-4" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-
-                        <div class="carousel-inner rounded-4">
-                            <div class="carousel-item active">
-                                <img src="./assets/images/anhCuoi/anh1.jpg" alt="image 1" class="d-block w-100" onclick="ancLab.guest.modal(this)">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/anhCuoi/anh2.jpg" alt="image 2" class="d-block w-100" onclick="ancLab.guest.modal(this)">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/anhCuoi/anh3.jpg" alt="image 3" class="d-block w-100" onclick="ancLab.guest.modal(this)">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/anhCuoi/anh4.jpg" alt="image 4" class="d-block w-100" onclick="ancLab.guest.modal(this)">
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-image-one" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-image-one" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+                <h2 class="font-esthetic text-center py-2 m-0" style="font-size: 2.5rem;">Ảnh cưới</h2>
+                <div class="image-grid" >
+                    <div class="image-row">
+                      <div class="image image-01" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh1.jpg')"></div>  
+                      <div class="image image-02" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh2.jpg')"></div>  
+                      <div class="image image-03" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh3.jpg')"></div>  
+                    </div> 
+                    <div class="image-row">
+                      <div class="image image-04" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh4.jpg')"></div>  
+                      <div class="image image-05" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh5.jpg')"></div>  
+                    </div>  
+                    <div class="image-row">
+                      <div class="image image-06" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh6.jpg')"></div>  
+                      <div class="image image-07" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh7.jpg')"></div>   
+                      <div class="image image-08" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh8.jpg')"></div>  
+                      <div class="image image-09" onclick="ancLab.guest.modal('./assets/images/anhCuoi/anh9.jpg')"></div>  
+                    </div>  
+                  </div>                   
             </div>
         </section>
         <section class="bg-light pb-4">
@@ -374,30 +339,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
             <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
         </svg>
-
-        <!-- Comment -->
-        <section class="bg-light my-0 pb-0 pt-3" id="comment" style="display: none;">
-            <div class="container">
-                <div class="py-3" id="comments" data-loading="false"></div>
-                <nav class="d-flex d-none justify-content-center mt-1 mb-0" id="pagination">
-                    <ul class="pagination mb-2 shadow-sm rounded-4">
-                        <li class="page-item disabled" id="previous">
-                            <button class="page-link rounded-start-4" onclick="comment.pagination.previous(this)" data-offline-disabled="false">
-                                <i class="fa-solid fa-circle-left me-1"></i>Prev
-                            </button>
-                        </li>
-                        <li class="page-item disabled">
-                            <span class="page-link text-light" id="page">1</span>
-                        </li>
-                        <li class="page-item" id="next">
-                            <button class="page-link rounded-end-4" onclick="comment.pagination.next(this)" data-offline-disabled="false">
-                                Next<i class="fa-solid fa-circle-right ms-1"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
     </main>
 
     <!-- Welcome Page -->
@@ -473,9 +414,6 @@
         function js_ChooseNhaTrai(){
             document.getElementById('btnNhaTrai').className="styleChoose";
             document.getElementById('btnNhaGai').className="styleNone";
-
-            // document.getElementById('thiepNhaTrai').style.display="block";
-            // document.getElementById('thiepNhaGai').style.display="none";
             document.getElementById('thiepCuoi').innerHTML = `<div data-aos="fade-right" data-aos-duration="2000"  id="thiepNhaTrai" class="carContainer">
                     <p style="text-align: center;">
                         <span style="font-size: 120%; color: #282828;">
@@ -502,10 +440,6 @@
         function js_ChooseNhaGai(){
             document.getElementById('btnNhaTrai').className="styleNone";
             document.getElementById('btnNhaGai').className="styleChoose";
-
-            // document.getElementById('thiepNhaTrai').style.display="none";
-            // document.getElementById('thiepNhaGai').style.display="block";
-            // document.getElementById('thiepNhaGai').setAttribute("data-aos","fade-right","data-aos-duration","2000");
             document.getElementById('thiepCuoi').innerHTML = `<div data-aos="fade-left" data-aos-duration="2000" id="thiepNhaGai" class="carContainer">
                     <p style="text-align: center;">
                         <span style="font-size: 120%; color: #282828;">

@@ -85,3 +85,73 @@
 .carContainer{
     margin-top: 20px;  box-shadow: 0 0 15px 5px #abb8c3; padding: 30px 10px 30px 10px;
 }
+
+
+
+.image-grid {
+    padding: 0px;
+  }
+  
+  .image-row {
+    display: flex;  
+  }
+  
+  .image-row .image {
+    margin: 10px;
+    height: 240px;  
+  }
+  
+  .image { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 6px 12px #e9ecef, 
+                0 6px 12px #e9ecef,
+                0 6px 12px #e9ecef;
+  }
+  
+  .image-01 {
+    background-image: url('/assets/images/anhCuoi/anh1.jpg'); 
+    flex: 1;  
+  }
+  
+  .image-02 {
+    background-image: url('/assets/images/anhCuoi/anh2.jpg'); 
+    flex: 2;  
+  }
+  
+  .image-03 {
+    background-image: url('/assets/images/anhCuoi/anh3.jpg'); 
+    flex: 1;  
+  }
+  
+  .image-04 {
+    background-image: url('/assets/images/anhCuoi/anh4.jpg'); 
+    flex: 1;
+  }
+  
+  .image-05 {
+    background-image: url('/assets/images/anhCuoi/anh5.jpg'); 
+    flex: 2;
+  }
+  
+  .image-06 {
+    background-image: url('/assets/images/anhCuoi/anh6.jpg'); 
+    flex: 2;
+  }
+  
+  .image-07 {
+    background-image: url('/assets/images/anhCuoi/anh7.jpg'); 
+    flex: 2;
+  }
+  
+  .image-08 {
+    background-image: url('/assets/images/anhCuoi/anh8.jpg'); 
+    flex: 2;
+  }
+  
+  .image-09 {
+    background-image: url('/assets/images/anhCuoi/anh9.jpg'); 
+    flex: 2;
+  }
+  

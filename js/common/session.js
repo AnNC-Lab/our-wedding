@@ -1,6 +1,6 @@
 import { dto } from '../http/dto.js';
 import { storage } from './storage.js';
-import { request, HTTP_POST, HTTP_GET } from '../http/request.js';
+import { request, HTTP_POST } from '../http/request.js';
 
 export const session = (() => {
 
@@ -54,21 +54,22 @@ export const session = (() => {
      * @returns {Promise<ReturnType<typeof dto.baseResponse<object>>}
      */
     const guest = () => {
-        return request(HTTP_GET, '/api/config')
-            .token(document.body.getAttribute('data-key'))
-            .send()
-            .then((res) => {
-                if (res.code !== 200) {
-                    return res;
-                }
-
-                const config = storage('config');
+        let res = {
+            "code": 200,
+            "data": {
+                "name": "AncLab",
+                "can_edit": true,
+                "can_delete": true,
+                "can_reply": true
+            },
+            "error": null
+        };
+        const config = storage('config');
                 for (let [k, v] of Object.entries(res.data)) {
                     config.set(k, v);
                 }
 
                 return res;
-            });
     };
 
     /**

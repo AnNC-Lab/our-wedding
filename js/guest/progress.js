@@ -43,10 +43,10 @@ export const progress = (() => {
         loaded += 1;
         info.innerText = `Loading ${type} complete ${showInformation()}`;
         bar.style.width = Math.min((loaded / total) * 100, 100).toString() + '%';
-
-        if (loaded === total) {
-            document.dispatchEvent(new Event('progressDone'));
-        }
+        document.dispatchEvent(new Event('progressDone'));
+        // if (loaded === total) {
+        //     document.dispatchEvent(new Event('progressDone'));
+        // }
     };
 
     /**
