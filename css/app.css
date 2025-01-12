@@ -111,47 +111,47 @@
   }
   
   .image-01 {
-    background-image: url('./assets/images/anhCuoi/anh1.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh1.jpg'); 
     flex: 1;  
   }
   
   .image-02 {
-    background-image: url('./assets/images/anhCuoi/anh2.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh2.jpg'); 
     flex: 2;  
   }
   
   .image-03 {
-    background-image: url('./assets/images/anhCuoi/anh3.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh3.jpg'); 
     flex: 1;  
   }
   
   .image-04 {
-    background-image: url('./assets/images/anhCuoi/anh4.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh4.jpg'); 
     flex: 1;
   }
   
   .image-05 {
-    background-image: url('./assets/images/anhCuoi/anh5.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh5.jpg'); 
     flex: 2;
   }
   
   .image-06 {
-    background-image: url('./assets/images/anhCuoi/anh6.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh6.jpg'); 
     flex: 2;
   }
   
   .image-07 {
-    background-image: url('./assets/images/anhCuoi/anh7.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh7.jpg'); 
     flex: 2;
   }
   
   .image-08 {
-    background-image: url('./assets/images/anhCuoi/anh8.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh8.jpg'); 
     flex: 2;
   }
   
   .image-09 {
-    background-image: url('./assets/images/anhCuoi/anh9.jpg'); 
+    background-image: url('../assets/images/anhCuoi/anh9.jpg'); 
     flex: 2;
   }
   
