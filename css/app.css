@@ -98,7 +98,7 @@
   
   .image-row .image {
     margin: 10px;
-    height: 240px;  
+    height: 8rem;  
   }
   
   .image { 
@@ -111,47 +111,177 @@
   }
   
   .image-01 {
-    background-image: url('../assets/images/anhCuoi/anh1.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_1.png'); 
     flex: 1;  
   }
   
   .image-02 {
-    background-image: url('../assets/images/anhCuoi/anh2.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_2.png'); 
     flex: 2;  
   }
   
   .image-03 {
-    background-image: url('../assets/images/anhCuoi/anh3.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_3.png'); 
     flex: 1;  
   }
   
   .image-04 {
-    background-image: url('../assets/images/anhCuoi/anh4.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_4.png'); 
     flex: 1;
   }
   
   .image-05 {
-    background-image: url('../assets/images/anhCuoi/anh5.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_5.png'); 
     flex: 2;
   }
   
   .image-06 {
-    background-image: url('../assets/images/anhCuoi/anh6.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_6.png'); 
     flex: 2;
   }
   
   .image-07 {
-    background-image: url('../assets/images/anhCuoi/anh7.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_7.png'); 
     flex: 2;
   }
   
   .image-08 {
-    background-image: url('../assets/images/anhCuoi/anh8.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_8.png'); 
     flex: 2;
   }
   
   .image-09 {
-    background-image: url('../assets/images/anhCuoi/anh9.jpg'); 
+    background-image: url('../assets/images/anhCuoi/Screenshot_9.png'); 
+    flex: 2;
+  }
+
+  .image-10 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_10.png'); 
+    flex: 2;
+  }
+
+  .image-11 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_11.png'); 
+    flex: 2;
+  }
+
+  .image-12 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_12.png'); 
+    flex: 2;
+  }
+
+  .image-13 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_13.png'); 
+    flex: 2;
+  }
+
+  .image-14 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_14.png'); 
+    flex: 2;
+  }
+
+  .image-15 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_15.png'); 
+    flex: 2;
+  }
+
+  .image-16 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_16.png'); 
+    flex: 2;
+  }
+
+  .image-17 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_17.png'); 
+    flex: 2;
+  }
+
+  .image-18 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_18.png'); 
+    flex: 2;
+  }
+
+  .image-19 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_19.png'); 
+    flex: 2;
+  }
+
+  .image-20 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_20.png'); 
+    flex: 2;
+  }
+
+  .image-21 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_21.png'); 
+    flex: 2;
+  }
+
+  .image-22 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_22.png'); 
+    flex: 2;
+  }
+
+  .image-23 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_23.png'); 
+    flex: 2;
+  }
+
+  .image-24 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_24.png'); 
+    flex: 2;
+  }
+
+  .image-25 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_25.png'); 
+    flex: 2;
+  }
+
+  .image-26 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_26.png'); 
+    flex: 2;
+  }
+
+  .image-27 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_27.png'); 
+    flex: 2;
+  }
+
+  .image-28 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_28.png'); 
+    flex: 2;
+  }
+
+  .image-29 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_29.png'); 
+    flex: 2;
+  }
+
+  .image-30 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_30.png'); 
+    flex: 2;
+  }
+
+  .image-31 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_31.png'); 
+    flex: 2;
+  }
+
+  .image-32 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_32.png'); 
+    flex: 2;
+  }
+
+  .image-33 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_33.png'); 
+    flex: 2;
+  }
+
+  .image-34 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_34.png'); 
+    flex: 2;
+  }
+
+  .image-35 {
+    background-image: url('../assets/images/anhCuoi/Screenshot_35.png'); 
     flex: 2;
   }
   
